@@ -1,8 +1,18 @@
-# Two-minute demo · Mercado Verde
+# Demo · Mercado Verde
 
-按以下顺序可以在两分钟内展示问题定位、实时变化和交互能力。启动方式见 [README](../README.md)。界面展示的交易和故障均为模拟数据。
+启动方式见 [README](../README.md)。用户提供的录屏见下；另附建议的两分钟走查流程和待完成的截图清单。界面展示的交易和故障均为模拟数据。
 
-**Capture status:** screenshots have not been captured. Automated browser access was blocked because its security check could not verify saved permissions. The sections below are a manual capture checklist, not evidence of completed visual checks. Build verification and all fifteen tests passed: eleven data tests and four server-rendered markup checks. Browser interaction and visual layout still need manual verification.
+## Video
+
+[Open the user-supplied screen recording](demo/checkout-health-demo.mp4).
+
+The recording was provided separately by the user and is preserved as the original, unmodified MP4. It lasts approximately 2 minutes 22 seconds and is 168.71 MiB. The file is stored with Git LFS; open the link above to download it from GitHub, or use `git lfs pull` after installing and initializing Git LFS in a local clone. The application runs without the recording.
+
+The recording does not change the status of automated browser verification or the pending screenshot checklist below.
+
+**Verification and screenshot status:** screenshots have not been captured. Automated browser access was blocked because its security check could not verify saved permissions. The screenshot checklist below describes pending captures, not completed visual checks. Build verification and all fifteen tests passed: eleven data tests and four server-rendered markup checks. Browser interaction and visual layout still need manual verification.
+
+## Suggested two-minute walkthrough
 
 | Time | Action | What to highlight |
 | --- | --- | --- |
@@ -22,8 +32,6 @@ Start the application, open [http://127.0.0.1:5173](http://127.0.0.1:5173) in a 
 | `docs/screenshots/colombia-filter.jpg` | Select Colombia, then capture its scoped chart and method/processor breakdowns. Open the PSE detail dialog if decline reasons are useful to show. | Highlight PSE / PayAndean's low approval rate and attempt count. Show the active country filter and explain how it narrows the detail view. |
 | `docs/screenshots/live-update.jpg` | Clear extra filters and restore the overview. Record the initial count and last-sync time, wait at least one five-second batch, then capture the updated values. Pause afterward to inspect the snapshot. | Label the before/after timestamp and count. A single frame cannot establish ongoing movement; pair it with the initial capture or demonstrate live updates in a recording. |
 | `docs/screenshots/mobile.jpg` | Resize the browser to a narrow viewport or use a mobile preview, then capture the overview. Check navigation, filter controls, chart labels, and horizontal table scrolling manually. | Highlight how the overview adapts to the narrow screen. Note any layout issue found during manual verification instead of presenting it as already validated. |
-
-For a screen recording, follow the two-minute timeline above and include at least one visibly arriving batch, a country filter, a detail dialog, and pause / resume. Save the recording with the final submission when capture is available.
 
 ## Reviewer notes
 

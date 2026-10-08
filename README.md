@@ -32,6 +32,13 @@ npm test
 
 `npm run build` 同时执行 TypeScript 检查与生产构建。`npm test` 使用 Node.js 原生测试运行器，无需额外测试服务。
 
+演示录屏保留用户提供的原始 MP4，约 2 分 22 秒、168.71 MiB，使用 Git LFS 存储。应用运行不依赖视频文件。如需在本地获取录屏，安装 Git LFS 后在仓库目录运行以下命令；也可以打开下方的录屏链接，在 GitHub 文件页面下载：
+
+```sh
+git lfs install
+git lfs pull
+```
+
 ## 建议体验顺序
 
 1. 打开总览，先观察顶部告警、三国健康卡片和授权率曲线，定位 Colombia 与 SurPay 的问题。
@@ -122,6 +129,7 @@ Controls use readable text labels, visible focus states, and native buttons or f
 - Working React application and local transaction generator.
 - Data and server-rendered markup tests, a standalone JSON generation script, and the checked-in fictional transaction snapshot.
 - Setup, architecture, design decisions, and domain assumptions in this README.
+- The [user-supplied original screen recording](docs/demo/checkout-health-demo.mp4), approximately 2 minutes 22 seconds, stored with Git LFS.
 - A two-minute walkthrough and manual screenshot capture checklist in [docs/DEMO.md](docs/DEMO.md). Screenshot files have not been captured yet.
 
 The optional local delivery archive at `deliverables/mercado-verde-checkout-health.zip` is excluded from Git, along with `node_modules/` and the generated `dist/` directory. It is not a repository download. Repository users install dependencies with `npm install` and create the production build with `npm run build`.
